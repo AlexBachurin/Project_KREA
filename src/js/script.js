@@ -39,3 +39,13 @@ workItems.forEach((item, i) => {
        })
     })
 })
+
+//slider
+
+const slider = tns({
+    container: '.references-slider',
+    items: 1,
+    slideBy: 'page',
+    nav: false,
+    controlsContainer: '.slider__controls',
+});
