@@ -13,6 +13,11 @@
 </head>
 
 <body>
+    <div class="hamburger hamburger--squeeze">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -22,12 +27,19 @@
                 <div class="menu">
                     <div class="menu__block">
                         <div class="menu__nav">
+                            <div class="menu__logo">KREA.</div>
                             <ul class="menu__list">
                                 <li><a href="#" class="menu__link">Services</a></li>
                                 <li><a href="#" class="menu__link">Works</a></li>
                                 <li><a href="#" class="menu__link">References</a></li>
                                 <li><a href="#" class="menu__link">Contact</a></li>
                             </ul>
+                            <div class="socials menu__socials">
+                                <a href="#"><img src="icons/footer/footer_facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="icons/footer/footer_twitter.png" alt="twitter"></a>
+                                <a href="#"><img src="icons/footer/footer_insta.png" alt="instagram"></a>
+                                <a href="#"><img src="icons/footer/footer_google.png" alt="google+"></a>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__overlay"></div>
@@ -424,11 +436,11 @@
                 <div class="form__block">
                     <div class="form__item">
                         <label for="name" class="form__label"></label>
-                        <input type="text" class="form__input" id="name" placeholder="Full Name">
+                        <input type="text" class="form__input" id="name" placeholder="Full Name" required>
                     </div>
                     <div class="form__item">
                         <label for="email" class="form__label"></label>
-                        <input type="email" class="form__input" id="email" placeholder="E-mail">
+                        <input type="email" class="form__input" id="email" placeholder="E-mail" required>
                     </div>
                 </div>
                 <div class="form__item form__item_long">
@@ -454,20 +466,21 @@
                 <div class="footer__contacts-block">
                     <div class="footer__contacts-subblock">
                         <a href="#" class="footer__mail"><img src="icons/footer/mail.png" alt="mail"></a>
-                        
+
                         <div class="footer__contacts-text">info@envato.com</div>
                     </div>
                     <div class="footer__contacts-subblock">
-                        <a href="#" class="footer__phone"><img src="icons/footer/phone.png" class="footer__phone" alt="phone"></a>
+                        <a href="#" class="footer__phone"><img src="icons/footer/phone.png" class="footer__phone"
+                                alt="phone"></a>
                         <div class="footer__contacts-text">900 800 70 60</div>
                     </div>
                 </div>
                 <div class="footer__socials-block">
-                    <div class="footer__socials">
-                        <img src="icons/footer/footer_facebook.png" alt="facebook">
-                        <img src="icons/footer/footer_twitter.png" alt="twitter">
-                        <img src="icons/footer/footer_insta.png" alt="instagram">
-                        <img src="icons/footer/footer_google.png" alt="google+">
+                    <div class="socials footer__socials">
+                        <a href="#"><img src="icons/footer/footer_facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="icons/footer/footer_twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="icons/footer/footer_insta.png" alt="instagram"></a>
+                        <a href="#"><img src="icons/footer/footer_google.png" alt="google+"></a>
                     </div>
                     <div class="footer__copyright">All rights reserved.</div>
                 </div>

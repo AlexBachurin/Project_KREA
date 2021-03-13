@@ -49,3 +49,19 @@ const slider = tns({
     nav: false,
     controlsContainer: '.slider__controls',
 });
+
+//menu
+
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      menuOverlay = document.querySelector('.menu__overlay')
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    menu.classList.toggle('active')
+})
+
+menuOverlay.addEventListener('click', () => {
+    hamburger.classList.remove('is-active')
+    menu.classList.remove('active')
+})

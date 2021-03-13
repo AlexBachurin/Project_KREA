@@ -121,4 +121,121 @@
                 margin-top: 0
     .contact
         min-height: auto
-        padding: 70px 0 
+        padding: 70px 0
+
+@media screen and ( max-width: 767px  )
+    .container
+        max-width: 540px
+    .hamburger
+        display: block
+    .header
+        padding-top: 130px
+        &__logo
+            display: none
+        &__title
+            line-height: 0
+            margin-top: 0
+        &__subtitle
+            line-height: 0
+            margin-top: 120px
+    .works
+        &__wrapper
+            // grid-template-columns: 1fr
+        &__item
+            img
+                width: 450px
+            &_large1
+                grid-column: unset
+                grid-row: unset
+            &_large2
+                grid-column: unset
+                grid-row: unset
+    .slider
+        &__photo
+            margin: 0 auto
+            width: 400px
+            img
+                width: 100%
+        &-wrapper
+            width: 500px
+        &__item
+            &-wrapper
+                flex-direction: column
+        &__person
+            &-wrapper
+                padding-left: 0
+            &-name
+                text-align: center
+        &__control
+            &_right
+                right: -40px
+    .form
+        &__btn
+            height: 60px
+            font-size: 25px
+    .footer
+        &__wrapper
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(150px, 250px))
+            row-gap: 30px
+        &__socials
+            width: auto
+            margin-right: 0
+            justify-content: space-evenly
+        &__copyright
+            text-align: center
+        &__address
+            text-align: right
+    .menu
+        position: fixed
+        z-index: 11
+        top: 0
+        left: -100%
+        width: 100%
+        transition: all 0.6s
+        visibility: hidden
+        opacity: 0
+        &__logo
+            display: block
+            margin-bottom: 50px
+        &__socials
+            display: flex
+            margin-top: 73px
+        &__block
+            position: relative
+            z-index: 111
+            width: 320px
+            height: 510px
+            background-color: #202020
+        &__nav
+            width: 100%
+            height: 100%
+        &__list
+            flex-direction: column
+            justify-content: initial
+            width: 100%
+            height: 100%
+
+        &__nav
+            padding: 37px 30px 130px 33px
+            display: flex
+            flex-direction: column
+        &__link
+            display: block
+            width: 100%
+            font-weight: 900
+            margin-bottom: 27px
+            border-bottom: 3px solid $white-color
+            padding-bottom: 23px
+        &__overlay
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $white-color
+            opacity: 0.75
+    .menu.active
+        left: 0
+        visibility: visible
+        opacity: 1
