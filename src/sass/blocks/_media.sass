@@ -7,7 +7,7 @@
             width: 1200px
             margin: 0 auto
             padding-left: 50px
-    
+
 @media screen and ( max-width: 1500px )
     .container
         max-width: 1320px
@@ -42,17 +42,14 @@
             &_long
                 width: auto
         &__block
-            
-    
+
 @media (max-width: 1200px)
     .container
         max-width: 960px
     .services
         padding-top: 80px
         padding-bottom: 70px
-        
 
-    
     .slider
         &-wrapper
             width: 830px
@@ -74,10 +71,54 @@
     .form
         &__item
             width: auto
-    
+
     .footer
         &__contacts
             &-subblock
                 margin-bottom: 7px
                 &:nth-child(2)
                     margin-bottom: 0
+
+@media screen and ( max-width: 991px )
+    .container
+        max-width: 720px
+    .services
+        &__wrapper
+            margin-top: 50px
+        &__item
+            row-gap: 0px
+    .works
+        &__item
+            img
+                width: 360px
+                object-fit: cover
+    .slider
+        &__photo
+            &::before
+                display: none
+            img
+                width: 270px
+                height: 270px
+                object-fit: cover
+        &__item
+            &-wrapper
+                padding-left: 0px
+        &-wrapper
+            width: 650px
+            padding-left: 40px
+        &__control
+            &_right
+                right: -50px
+        &__person
+            &-name
+                font-size: 38px
+    .form
+        &__block
+            flex-direction: column
+        &__item
+            width: auto
+            &_long
+                margin-top: 0
+    .contact
+        min-height: auto
+        padding: 70px 0 
