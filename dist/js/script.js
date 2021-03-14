@@ -21,7 +21,6 @@ workItems.forEach((item, i) => {
 
 workItems.forEach((item, i) => {
     item.addEventListener('click', () => {
-        console.log('click')
         popupModals[i].classList.remove('hide')
         popupModals[i].classList.add('show')
         document.body.style.overflow = "hidden"
@@ -37,7 +36,6 @@ function close(item) {
 //надо использовать workItems из-за всплытия событий
 workItems.forEach((item, i) => {
     item.addEventListener('click', (e) => {
-        console.log(e.target)
         popupModals.forEach(popup => {
             if ((e.target === popup)) {
                 close(popup)
@@ -87,6 +85,10 @@ menuOverlay.addEventListener('click', () => {
 menuLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault()
+        menuLinks.forEach(item => {
+            item.classList.remove('active')
+        })
+        link.classList.add('active')
         menu.classList.remove('active')
         hamburger.classList.remove('is-active')      
     })
